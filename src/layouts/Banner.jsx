@@ -5,8 +5,8 @@ import bannerHome from '../assets/bannerHome.jpg'
 class Banner extends React.Component {
     render(){
          return (
-              <div>
-                   <p>Chez vous, partout et ailleurs</p>
+              <div className="banner">
+                   <h2>Chez vous, partout et ailleurs</h2>
                    <img src={ bannerHome } alt="Bannière"/>
               </div>
          )

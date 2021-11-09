@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Banner from '../components/Banner'
-import Gallery from '../components/Gallery'
+import Banner from '../layouts/Banner'
+import Gallery from '../layouts/Gallery'
 
 class Home extends React.Component {
     render(){

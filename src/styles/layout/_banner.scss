@@ -1,0 +1,18 @@
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //   background-image: linear-gradient();
+  img {
+    min-width: 100%;
+    object-fit: cover;
+    border-radius: 2%/10%;
+  }
+
+  h2 {
+    position: absolute;
+    color: white;
+    font-size: 2em;
+  }
+}

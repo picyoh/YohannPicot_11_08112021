@@ -1,0 +1,16 @@
+a {
+  padding: 0 5%;
+  text-decoration: none;
+  color: $primaire;
+  &:active {
+    text-decoration: underline;
+  }
+  &:hover {
+    background-color: $primaire;
+    border-radius: 10%/30%;
+    color: white;
+  }
+  &:visited {
+    color: red;
+  }
+}
