@@ -8,9 +8,9 @@ class Thumbs extends React.Component {
      render(){
          
          return (
-              <div className="thumb">
+              <div className="thumbs">
                    {thumbsArray.map((thumb) => (
-                        <Link to={'/lodging/' + thumb.id} key={ thumb.id }>
+                        <Link to={'/accom/' + thumb.id} key={ thumb.id }>
                              <img src={ thumb.cover } alt={ thumb.title } />
                              <p>{ thumb.title}</p>
                         </Link>

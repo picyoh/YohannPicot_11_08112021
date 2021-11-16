@@ -1,0 +1,14 @@
+footer{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    
+    img {
+        padding-top: 3%;
+        flex: 10%;
+        filter: brightness(0) invert(1);
+    }
+}

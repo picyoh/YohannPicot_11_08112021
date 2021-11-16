@@ -1,0 +1,27 @@
+.thumbs {
+  display :flex;
+  flex-flow: row wrap;
+
+  a {
+    position: relative;
+    width: 100%;
+    flex: 25% 1 1;
+    margin: 2%;
+    padding: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    p{
+      position: absolute;
+      bottom: 2%;
+      left: 2%;
+      color: white;
+
+    }
+  }
+  
+}

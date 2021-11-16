@@ -1,6 +1,16 @@
 header {
-  width: 100%;
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
+  
+  img {
+    flex: 20%;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+  }
+  
 }

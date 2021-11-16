@@ -1,15 +1,15 @@
 import React from 'react'
 
 import Banner from '../layouts/Banner'
-import Dropdowns from '../layouts/Dropdowns'
+import Dropdowns from '../layouts/DropsAbout'
 
 class About extends React.Component {
     render(){
          return (
-             <div>
+             <section>
                  <Banner />
                  <Dropdowns />
-             </div>
+             </section>
          )
     }
 }

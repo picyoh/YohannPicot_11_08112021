@@ -1,15 +1,15 @@
 import React from 'react'
 
 import Banner from '../layouts/Banner'
-import Gallery from '../layouts/Gallery'
+import Thumbs from '../components/Thumbs'
 
 class Home extends React.Component {
     render(){
          return (
-             <div> 
+             <section> 
                  <Banner />
-                 <Gallery />
-             </div>
+                 <Thumbs />
+             </section>
          )
     }
 }

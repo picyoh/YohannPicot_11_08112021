@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './styles/main.scss'
 
 import Home from './pages/Home'
-import Lodging from './pages/Lodging'
+import Accom from './pages/Accom'
 import About from './pages/About'
 import Error404 from './pages/Error404'
 import Header from './layouts/Header'
@@ -22,9 +22,9 @@ ReactDOM.render(
         <Route path="/about">
           <About />
         </Route>
-        <Route path="/lodging">
-          <Lodging />
-        </Route>
+        <Route path="/accom/:hostId" render= {props => (
+          <Accom {...props} />
+        )}/>
         <Route>
           <Error404 />
         </Route>
