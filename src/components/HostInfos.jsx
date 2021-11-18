@@ -20,7 +20,6 @@ class HostInfos extends React.Component {
     }
 
     render(){
-        console.log(this.equipments)
         return(
             <article>
                 <div className="title">

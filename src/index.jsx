@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 
 import './styles/main.scss'
 
@@ -22,12 +22,13 @@ ReactDOM.render(
         <Route path="/about">
           <About />
         </Route>
-        <Route path="/accom/:hostId" render= {props => (
+        <Route path="/acco/:hostId" render= {props => (
           <Accom {...props} />
         )}/>
-        <Route>
+        <Route path='/error404'>
           <Error404 />
         </Route>
+        <Redirect to='/error404' />
       </Switch>
       <Footer />
     </Router>

@@ -25,7 +25,7 @@ class Carousel extends React.Component {
         )
     }
 
-    subIndex = (currentIndex) => {
+    subIndex = () => {
         this.state.currentIndex > 0 ? (
             this.setState({ currentIndex: this.state.currentIndex - 1 })
         ) : (
@@ -35,7 +35,6 @@ class Carousel extends React.Component {
 
     render(){
         const picture = this.getPicture()
-        console.log(this.state.currentIndex, picture)
         return(
             <div>
                 <FontAwesomeIcon icon={faChevronLeft} onClick={ this.subIndex } />
