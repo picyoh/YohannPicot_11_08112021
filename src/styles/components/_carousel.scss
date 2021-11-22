@@ -1,0 +1,70 @@
+.carousel {
+    position: relative;
+    max-width: 100%;
+    height: 30vh;
+    
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5% / 10%;
+    }
+
+    svg {
+        position:absolute;
+        top: 45%;
+        color: white;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .chevron-left {
+        left: 3%;
+    }
+
+    .chevron-right {
+        right: 3%;
+    }
+    p{
+        color: white;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+    }
+
+    @include tablet {
+        height: 45vh;
+    }
+
+    @include desktop {
+        img{
+            border-radius: 2% / 7%;
+        }
+
+        svg {
+            top: 50%;
+            font-size: 6rem;
+        }
+
+        .chevron-left {
+            left: 0;
+        }
+    
+        .chevron-right {
+            right: 0;
+        }
+    }
+
+    @include large-desktop {
+        height: 50vh;
+        margin-bottom: 1%;
+         svg {
+             top: 45%;
+         }
+        
+    }
+
+    @include wide {
+        height: 70vh;
+    }
+}

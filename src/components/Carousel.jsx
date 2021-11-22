@@ -1,12 +1,20 @@
 import React from 'react'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { CgChevronLeft, CgChevronRight } from 'react-icons/cg'
 
 class Carousel extends React.Component {
+
+    /**
+     * Carousel class contructor for Carousel component
+     * 
+     * @param {Object} props
+     * @param {String} props.title
+     * @param {String | Array} props.pictures 
+     */
+    
     constructor(props){
         super(props)
+        this.length = this.props.data.pictures.length
         this.title = this.props.data.title
         this.maxIndex = this.props.data.pictures.length - 1
         this.state = { currentIndex: 0 };
@@ -36,11 +44,18 @@ class Carousel extends React.Component {
     render(){
         const picture = this.getPicture()
         return(
-            <div>
-                <FontAwesomeIcon icon={faChevronLeft} onClick={ this.subIndex } />
-                <img src={ picture } alt={this.title }/>
-                <FontAwesomeIcon icon={faChevronRight} onClick={ this.addIndex } /> 
-            </div>
+            this.length > 2 ? (
+                <article className="carousel">
+                    <CgChevronLeft className="chevron-left" onClick={ this.subIndex } />
+                    <img src={ picture } alt={this.title }/>
+                    <CgChevronRight className="chevron-right" onClick={ this.addIndex } />
+                    <p>{ this.state.currentIndex + 1 } / { this.length} </p> 
+                </article>
+            ) : (
+                <article className="carousel">
+                    <img src={ picture } alt={this.title }/>
+                </article>
+            )
         )
     }
 }

@@ -12,8 +12,8 @@ class Banner extends React.Component {
                    <Switch>
                         <Route exact path='/'>
                               <article className="banner">
-                                   <h2>Chez vous, partout et ailleurs</h2>
-                                   <img src={ bannerHome } alt="Bannière"/>
+                                   <h2><div>Chez vous,&nbsp;</div> <div>partout et ailleurs</div></h2>
+                                        <img src={ bannerHome } alt="Bannière"/>
                                </article>
                          </Route>
                          <Route path='/about'>

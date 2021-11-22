@@ -1,0 +1,53 @@
+.dropdowns {
+  @include tablet {
+    .dropdown ul {
+      padding: 2%;
+
+      li {
+      padding-bottom: 5%;
+      }
+    }
+  }
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .dropdown {
+      width: 80%;
+
+      button {
+        margin-top: 3%;
+        border-radius: 1%/10%;
+      }
+
+      ul {
+        padding: 2%;
+        li {
+          padding-bottom: 5%;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  @include wide {
+    .dropdown{
+              
+      button {
+          height: 6vh;
+          font-size: 1.5rem;
+          border-radius: 1% /25%;
+      }
+  
+      ul{
+        padding: 2%;
+        li {
+          padding-bottom: 2%;
+            font-size: 1.2rem;
+        }
+      } 
+    } 
+  }
+}
+

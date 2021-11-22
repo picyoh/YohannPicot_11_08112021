@@ -7,11 +7,13 @@ import HostInfos from '../components/HostInfos'
 import datas from '../datas/logements.json'
 
 class Accom extends React.Component {
+
      /**
-      * 
-      * @param {*} hostId 
+      * id de la page recupérée dans l'URL 
+      * @param {String} hostId 
       * @returns 
       */
+
      fetchData = (hostId) => {
           let target = datas.filter( element => element.id === hostId)
           return target[0]
@@ -21,7 +23,6 @@ class Accom extends React.Component {
     render(){
          const { hostId } = this.props.match.params;
          const data = this.fetchData(hostId)
-         console.log(data)
          return (
                    data ? (
                         <section>

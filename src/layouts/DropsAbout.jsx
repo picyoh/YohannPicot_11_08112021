@@ -20,15 +20,13 @@ let dropsAbout = [
      }
 ]
 class DropsAbout extends React.Component {
-     
-     
      render(){
          return (
-              <div>
+              <article className="dropdowns">
                    {dropsAbout.map((element, index) => (
                         <Dropdown key={ index } title={ element.title } content={ element.content }/>
                    ))}
-              </div>
+              </article>
          )
     }
 }

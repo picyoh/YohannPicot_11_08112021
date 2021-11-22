@@ -1,12 +1,23 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { GrStar } from 'react-icons/gr'
 
 import Dropdown from '../components/Dropdown'
 
 const ratingA = [1, 2, 3, 4, 5]
 
 class HostInfos extends React.Component {
+    /**
+     * 
+     * @param {String} props.data.title
+     * @param {String} props.data.location
+     * @param {String} props.data.host.name
+     * @param {String} props.data.host.picture
+     * @param {Array} props.data.tags
+     * @param {Number} props.data.rating
+     * @param {String} props.data.description
+     * @param {Array} props.data.equipements
+     *  
+     */
     constructor(props) {
         super(props)
         this.title = this.props.data.title
@@ -21,30 +32,31 @@ class HostInfos extends React.Component {
 
     render(){
         return(
-            <article>
+            <article className="hostInfos">
                 <div className="title">
                 <h3>{ this.title }</h3>
                 <p>{ this.location }</p>
-                </div>
-                <div className="host">
-                    <p>{ this.hostName }</p>
-                    <img src={ this.hostPicture } alt={ this.hostName } />
                 </div>
                 <div className="tags">
                     {this.tags.map((tag, index) => (
                         <span key={ index }>{ tag }</span>
                     ))}
                 </div>
-                <div className="rate">
-                    {ratingA.map((el) => (
+                <span className="rate">
+                    {ratingA.map((el, index) => (
                         el <= this.rating ?
                         (
-                            <FontAwesomeIcon key={el} icon={ faStar } /> 
+                            <span key={ index }><GrStar /></span>
+                            
                         ) : (
-                            <FontAwesomeIcon key={el} className="emptyStar" icon={ faStar } />
+                            <span key={ index } className="emptyStar"><GrStar /></span>
                         )
                     ))}
-                </div>
+                </span>
+                <span className="host">
+                    <p>{ this.hostName }</p>
+                    <img src={ this.hostPicture } alt={ this.hostName } />
+                </span>
                 <Dropdown title="description" content={ this.description } />
                 <Dropdown title="equipments" content={ this.equipments } />
             </article>

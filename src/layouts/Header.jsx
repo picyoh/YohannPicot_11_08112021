@@ -1,7 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
-import logo from '../assets/logo'
+import logo from '..//assets/LOGO.png'
 
 class Header extends React.Component {
     render(){
@@ -9,8 +9,8 @@ class Header extends React.Component {
               <header>
                   <img src={ logo } alt="logo" />
                   <nav>
-                      <Link to='/'>Acceuil</Link>
-                      <Link to='/about'>A propos</Link>
+                      <NavLink exact activeClassName='active' to='/'>Acceuil</NavLink>
+                      <NavLink activeClassName='active' to='/about'>A Propos</NavLink>
                   </nav>
               </header>
          )

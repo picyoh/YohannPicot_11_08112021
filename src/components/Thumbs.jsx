@@ -9,7 +9,6 @@ class Thumbs extends React.Component {
      randomize(){
           while (thumbsArray.length < 6){
                const randI = Math.floor(Math.random() * (datas.length -1))
-               console.log(randI)
                if(!thumbsArray.includes(datas[randI])) {
                     thumbsArray.push(datas[randI])
                }
@@ -20,14 +19,14 @@ class Thumbs extends React.Component {
      render(){
          this.randomize(datas)
          return (
-              <div className="thumbs">
+              <article className="thumbs">
                    {thumbsArray.map((thumb) => (
                         <Link to={'/acco/' + thumb.id} key={ thumb.id }>
                              <img src={ thumb.cover } alt={ thumb.title } />
                              <p>{ thumb.title}</p>
                         </Link>
                    ))}
-              </div>
+              </article>
          )
     }
 }

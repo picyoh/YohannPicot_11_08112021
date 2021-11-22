@@ -1,0 +1,81 @@
+.dropdown {
+  width: 100%;
+  button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 5vh;
+    margin-top: 6%;
+
+    border: none;
+
+    background-color: $primary;
+    color: white;
+
+    text-transform: capitalize;
+
+    border-radius: 2% / 15%;
+
+    span svg {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+
+  ul {
+    display: none;
+    flex-flow: column;
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 5%;
+
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: -30px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: lightgray;
+      opacity: 0.2;
+      border-radius: 5% / 10%;
+    }
+
+    li {
+      color: $primary;
+      font-size: 0.7rem;
+      padding-bottom: 10%;
+    }
+  }
+
+  &:last-child {
+    padding-bottom: 16%;
+  }
+
+  .open {
+    display: flex;
+  }
+
+  @include tablet {
+    ul:after {
+      border-radius: 2% / 12%;
+    }
+  }
+
+  @include desktop {
+    ul:after {
+      border-radius: 2% / 20%;
+    }
+  }
+
+  @include large-desktop {
+    ul:after {
+      border-radius: 1% / 20%;
+    }
+  }
+}
+
