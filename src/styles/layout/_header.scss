@@ -27,19 +27,11 @@ header {
       color: $primary;
       font-variant-caps: all-small-caps;
       white-space: nowrap;
-      font-size: 1rem;
+      font-size: $medium-font-size;
 
       &:hover {
-        background-color: $primary;
-        border-radius: 10%/30%;
-        color: white;
+        @include rounded-border;
       }
-      &:visited {
-        border: 1px solid $primary;
-      }
-    }
-    .active{
-      text-decoration: underline;
     }
   }
 
@@ -52,7 +44,7 @@ header {
 
       a{
         font-variant-caps: normal;
-        font-size: 1.3rem;
+        font-size: $large-font-size;
         font-weight: 500;
         padding: 1%;
         &:last-child {

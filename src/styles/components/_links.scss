@@ -1,0 +1,12 @@
+a {
+    color: $primary;
+    &:hover {
+        @include inv-primary;
+      }
+      &:visited {
+        border: 1px solid $primary;
+      }
+}
+.active{
+  text-decoration: underline;
+}

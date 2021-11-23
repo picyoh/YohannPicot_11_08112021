@@ -4,20 +4,21 @@
 
 // base
 @import './base/typography';
-@import './base/body';
+@import './base/general';
 
 
 // components
 @import './components/thumbs';
-@import './components/dropdowns';
 @import './components/dropdown';
-@import './components/carousel';
 @import './components/host';
+@import './components/links';
 
 // layouts
 @import './layout/header';
 @import './layout/banner';
-
+@import './layout/carousel';
+@import './layout/dropAbout';
+@import './layout/error';
 @import './layout/footer';
 
 // breakpoints

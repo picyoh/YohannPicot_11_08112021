@@ -1,5 +1,6 @@
 .dropdown {
   width: 100%;
+  
   button {
     display: flex;
     justify-content: space-between;
@@ -11,12 +12,11 @@
 
     border: none;
 
-    background-color: $primary;
-    color: white;
+    @include inv-primary;
 
     text-transform: capitalize;
 
-    border-radius: 2% / 15%;
+    @include rounded-border;
 
     span svg {
       height: 1.5rem;
@@ -42,12 +42,12 @@
       height: 100%;
       background-color: lightgray;
       opacity: 0.2;
-      border-radius: 5% / 10%;
+      @include rounded-border;
     }
 
     li {
       color: $primary;
-      font-size: 0.7rem;
+      font-size: $small-font-size;
       padding-bottom: 10%;
     }
   }
@@ -62,19 +62,19 @@
 
   @include tablet {
     ul:after {
-      border-radius: 2% / 12%;
+      @include rounded-border;
     }
   }
 
   @include desktop {
     ul:after {
-      border-radius: 2% / 20%;
+      @include rounded-border;
     }
   }
 
   @include large-desktop {
     ul:after {
-      border-radius: 1% / 20%;
+      @include rounded-border;
     }
   }
 }
