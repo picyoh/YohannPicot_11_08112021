@@ -37,7 +37,7 @@ header {
 
   @include desktop {
     img {
-      flex: 0;
+      flex: 0 1 40%;
     }
 
     nav {
