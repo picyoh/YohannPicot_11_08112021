@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/YohannPicot_11_08112021/static/css/main.28cc7426.chunk.css",
+    "main.css": "/YohannPicot_11_08112021/static/css/main.b1bf6f50.chunk.css",
     "main.js": "/YohannPicot_11_08112021/static/js/main.2c29b290.chunk.js",
     "main.js.map": "/YohannPicot_11_08112021/static/js/main.2c29b290.chunk.js.map",
     "runtime-main.js": "/YohannPicot_11_08112021/static/js/runtime-main.f558ff8d.js",
@@ -8,7 +8,7 @@
     "static/js/2.c6aa6cac.chunk.js": "/YohannPicot_11_08112021/static/js/2.c6aa6cac.chunk.js",
     "static/js/2.c6aa6cac.chunk.js.map": "/YohannPicot_11_08112021/static/js/2.c6aa6cac.chunk.js.map",
     "index.html": "/YohannPicot_11_08112021/index.html",
-    "static/css/main.28cc7426.chunk.css.map": "/YohannPicot_11_08112021/static/css/main.28cc7426.chunk.css.map",
+    "static/css/main.b1bf6f50.chunk.css.map": "/YohannPicot_11_08112021/static/css/main.b1bf6f50.chunk.css.map",
     "static/js/2.c6aa6cac.chunk.js.LICENSE.txt": "/YohannPicot_11_08112021/static/js/2.c6aa6cac.chunk.js.LICENSE.txt",
     "static/media/bannerHome.2bf52a73.jpg": "/YohannPicot_11_08112021/static/media/bannerHome.2bf52a73.jpg",
     "static/media/kalen-emsley-Bkci_8qcdvQ-unsplash 2.15250ef8.jpg": "/YohannPicot_11_08112021/static/media/kalen-emsley-Bkci_8qcdvQ-unsplash 2.15250ef8.jpg"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.f558ff8d.js",
     "static/js/2.c6aa6cac.chunk.js",
-    "static/css/main.28cc7426.chunk.css",
+    "static/css/main.b1bf6f50.chunk.css",
     "static/js/main.2c29b290.chunk.js"
   ]
 }
